@@ -1,0 +1,142 @@
+/* global style =================================== */
+:root {
+  --color-secondery: #fb4c53;
+  --color-headin: #019cd8;
+  --color-odd-sec: #485065;
+  --color-even-sec: #636b7f;
+  --ff-primary: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  background-image: linear-gradient(90deg, #fefefe, #b9c5df);
+}
+
+
+h1 {
+  font-weight: 800;
+}
+
+/* nav style======================================================== */
+
+.nav-link,
+nav .nav-link:hover {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  position: relative;
+}
+
+nav .nav-link::before {
+  content: '';
+  left: 0;
+  position: absolute;
+  height: 2px;
+  bottom: -5px;
+  width: 0;
+  transition: width 500ms;
+  background-color: var(--color-headin);
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.btns {
+  background-color: var(--color-secondery);
+  color: white !important;
+  outline: none;
+  border: none;
+  padding: 7px 10px;
+  transition: background-color 400ms;
+}
+
+
+
+.form-control {
+  border: none;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+#search::placeholder {
+  color: #3b4c6d;
+}
+
+.btns:hover {
+  --color-secondery: #ea373d;
+  background-color: var(--color-secondery);
+}
+
+.weather {
+  border-radius: 15px;
+}
+
+.today,
+.tomorrow,
+.after-tomorrow {
+  min-height: 320px !important;
+}
+
+
+.tomorrow .date {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.today {
+  border-bottom-left-radius: 15px;
+}
+
+.today .date,
+.today {
+  border-top-left-radius: 15px;
+}
+
+.tomorrow {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
+
+.tomorrow .date {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.after-tomorrow .date,
+.after-tomorrow {
+  border-top-right-radius: 15px;
+}
+
+.today,
+.after-tomorrow {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6));
+}
+
+.after-tomorrow {
+  border-bottom-right-radius: 15px;
+}
+
+@media screen and (max-width:992px) {
+
+  .today .date,
+  .today {
+    border-top-right-radius: 15px;
+  }
+
+  .today {
+    border-bottom-left-radius: 0px;
+  }
+
+  .after-tomorrow {
+    border-bottom-left-radius: 15px;
+  }
+
+  .after-tomorrow .date,
+  .after-tomorrow {
+    border-top-right-radius: 0px;
+  }
+}

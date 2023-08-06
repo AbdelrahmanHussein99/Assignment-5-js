@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Weather</title>
+  <link rel="icon" href="imgs/113.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center my-3" href="#">
+        <img class="d-block" src="imgs/logo.png" alt="logo">
+        <h1 class="mb-0 ms-2 text-dark">Weather</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+          <li class="nav-item">
+            <a class="nav-link  p-0" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0" href="#">Contant</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="row my-5">
+        <form class="p-0">
+          <div class="parent d-flex bg-white p-2 rounded-3 shadow">
+            <input id="search" type="text" class="form-control" placeholder="Find your location...">
+            <button type="button" class="btn btns " id="searchBtn">Find</button>
+          </div>
+        </form>
+      </div>
+      <div class="row weather shadow">
+        <div class="col-lg-4  rounded-2 px-0">
+          <div class="today">
+            <!-- today weather -->
+          </div>
+        </div>
+        <div class="col-lg-4  px-0">
+          <div class="tomorrow">
+            <!-- tomorrow weather -->
+          </div>
+        </div>
+        <div class="col-lg-4  px-0">
+          <div class="after-tomorrow">
+            <!-- after tomorrow weather -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
